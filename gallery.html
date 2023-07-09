@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Atlantic Way > Gallery</title>
+    <link rel="stylesheet" href="gallerystyle.css">
+    <link rel="stylesheet" href="navbarstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- Code for nav bar -->
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbutton">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class = "logo">WILD ATLANTIC WAY</label>
+        <ul>
+            <li> <a class="active" href="C:\Users\bucib\Desktop\HTML\final-project-G1\HomePage.html">Home</a></li>
+            <li> <a href="C:\Users\bucib\Desktop\HTML\final-project-G1\PlanYourRoute.html">Route</a></li>
+            <li> <a href="C:\Users\bucib\Desktop\HTML\final-project-G1\Landmarks.html">Landmarks</a></li>
+            <li> <a href="C:\Users\bucib\Desktop\HTML\final-project-G1\PlanYourTrip.html">Plan Your Trip</a></li>
+            <li> <a href="C:\Users\bucib\Desktop\HTML\final-project-G1\gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Code for gallery -->
+
+    <div class="full-img" id="fullImgBox">
+        <img src="images/image1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="images/image1.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image2.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image3.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image4.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image5.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image6.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image7.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image8.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image9.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image10.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image11.jpg" onclick="openFullImg(this.src)">
+        <img src="images/image12.jpeg" onclick="openFullImg(this.src)">
+
+    </div>
+    
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+       
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram "></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Made with ♥ by <span class="by"> Cassandra, Sasha, Bruna & Kavya</span> </p>
+    </div>
+</footer>
+
+</body>
+</html>

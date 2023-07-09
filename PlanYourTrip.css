@@ -1,0 +1,263 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.headernavbar{
+    background: #0693e3;
+    height: 80px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.active,a:hover{
+    background:#91B0D9;
+    transition: .5s;
+}
+.checkbutton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbutton{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0693e3;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.hover,a.active{
+        background: none;
+        color: #91B0D9;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+h1{
+    background-image: url(images/donegalbanch.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    height: 600px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding: 300px 0;
+    color: white;
+}
+
+.planyourtrip{
+    font-size: 35px;
+    color: rgb(32, 30, 30);
+    padding: 20px 0 20px 10px;
+    text-align: center;
+}
+
+#mainP{
+    text-align: center;
+    line-height: 1,5;
+}
+
+h3{
+    font-size: 25px;
+    color: rgb(32, 30, 30);
+    padding: 20px 0 0px 10px;
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    font-size: 18px;
+    color:rgb(32, 30, 30);
+}
+
+section{
+    width: 100%;
+}
+
+.first-accordion{
+    padding-left: 10px;
+}
+
+.second-accordion{
+    padding-left: 10px;
+}
+
+.third-accordion{
+    padding: 0 0 40px 10px;
+}
+
+.accordion-button.collapsed{
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    font-size: 20px;
+    border: 0;
+    color: rgb(32, 30, 30);
+}
+
+.accordion-button-primary{
+    background-color: white;
+    font-size: 20px;
+    border: 0;
+    color: rgb(32, 30, 30);
+}
+
+.accordion-button-secondary{
+    background-color: white;
+    font-size: 20px;
+    border: 0;
+    color: rgb(32, 30, 30);
+}
+
+.accordion-button-terciary{
+    background-color: white;
+    font-size: 20px;
+    border: 0;
+    color: rgb(32, 30, 30);
+}
+
+.accordion-button-four{
+    background-color: white;
+    font-size: 20px;
+    border: 0;
+    color: rgb(32, 30, 30);
+}
+
+.accordion-button-five{
+    background-color: white;
+    font-size: 20px;
+    border: 0;
+    color: rgb(32, 30, 30);
+}
+
+a{
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(32, 30, 30);
+    text-decoration: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #0693e3;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #0693e3;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #0693e3;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom h4{
+    color: white;
+    font-size: 12px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
