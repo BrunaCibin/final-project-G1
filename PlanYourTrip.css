@@ -10,6 +10,7 @@
 body{
     font-family: 'Inter', sans-serif;
 }
+
 .headernavbar{
     background: #0693e3;
     height: 80px;
@@ -43,6 +44,7 @@ nav ul li a{
 }
 a.active,a:hover{
     background:#91B0D9;
+    color: white;
     transition: .5s;
     color: white;
 }

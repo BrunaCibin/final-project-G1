@@ -8,12 +8,14 @@
 }
 body{
     font-family: 'Inter', sans-serif;
+    padding-bottom: -40px;
 }
 .headernavbar{
     background: #0693e3;
     height: 80px;
     width: 100%;
     font-family: 'Inter', sans-serif;
+    
 }
 label.logo{
     color: white;
